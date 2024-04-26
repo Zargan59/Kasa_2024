@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Shrikhand&display=swap');
+@import "./Home.scss";
+@import "./nav.scss";
+@import "./footer.scss";
+*{
+    font-family: 'Montserrat', sans-serif; 
+    box-sizing: border-box;
+}
+
+$main-color : #FF6060;
+$footer-color : #000;
+

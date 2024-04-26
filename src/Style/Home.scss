@@ -1,0 +1,27 @@
+
+.banner{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    margin: 0 100px;
+
+    font-weight: 700;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#000; */
+    border-radius: 25px;
+    
+    height: 223px ;
+    width: auto;
+    
+}
+
+.bannerHome{
+    margin-top: 20px;
+    background: url(../Assets/BannerHome.jpg), center center/cover #00000060;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
