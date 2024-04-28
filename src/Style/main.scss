@@ -2,11 +2,13 @@
 @import "./Home.scss";
 @import "./nav.scss";
 @import "./footer.scss";
+@import "./card.scss";
+
 *{
     font-family: 'Montserrat', sans-serif; 
     box-sizing: border-box;
 }
 
 $main-color : #FF6060;
+$cards_background-color: #F6F6F6;
 $footer-color : #000;
-

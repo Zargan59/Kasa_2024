@@ -5,7 +5,7 @@
     color: white;
     align-items: center;
     margin: 0 100px;
-
+    
     font-weight: 700;
     /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color:#000; */
@@ -24,4 +24,18 @@
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .3);
+}
+
+.bannerAlernativ{
+    background: url(../Assets/BannerAlternativ.png), center center/cover #00000060;
+    height: 250px;
+    background-blend-mode: darken;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    
+
 }

@@ -11,9 +11,9 @@ function banner(props){
         }
         else{
             return(
-                <div>
-                <h2>Not Hello</h2>
-            </div>
+                <div className="banner bannerAlernativ">
+                    
+                </div>
             )
         }
     }
