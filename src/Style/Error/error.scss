@@ -1,0 +1,28 @@
+.error{
+    margin-bottom: 100px;
+
+    & .errorContent{
+        color: $main-color;
+        text-align: center;
+
+    }
+    & .error_404{
+        font-weight: 700;
+        font-size: 288px;
+        margin: 0;
+        margin-bottom: 100px ;
+    }
+    & .error_message{
+        font-weight: 500;
+        font-size: 36px;
+        margin-bottom: 100px;
+    }
+
+    & .return {
+        color: inherit;
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        // text-decoration: none;
+    }
+}

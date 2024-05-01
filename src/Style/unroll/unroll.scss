@@ -1,0 +1,107 @@
+$main-color : #FF6060;
+
+.about{
+    margin: 100px 0 ;
+    // min-height: 500px;
+}
+
+.unrollMe{
+    max-width: 580px;
+
+    & .unrolled{
+        padding: 0 15px ;
+        margin-top: -10px;
+        font-size: 18px;
+        opacity: 0;
+    
+        transform: translateY(0px);
+        transition: 
+        opacity 0.3s ease-in-out,
+        height 0.3s 0.3s ease-in-out;
+    
+        visibility: visible;
+        opacity: 1;
+        // height: auto;
+        min-height:20px;
+        
+        z-index: 2;
+        display: flex;
+    
+        background-color:  #F7F7F7;
+        background-color:  pink; 
+        border-radius: 0 0 5px 5px;
+        width: 100%;
+    }
+    & .hidden{
+        border: 2px solid green;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        transform: translateY(-100px)
+    }
+}
+
+
+.unrollMe_content{
+    height: 50px;
+    position: relative;
+    border-radius: 10px;
+    background-color:$main-color ;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 99;
+
+    
+    & p{
+        color: white;
+        margin: auto 0 auto 25px ;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+    & img{
+        max-width: 32px;
+        max-height: 32px;
+        margin-left: auto;
+        margin-right: 25px;
+        transform: rotate(180deg);
+
+        
+    }
+    & .active{
+        transform: rotate(0deg);
+        // animation: hideInfo 0.1s ease-in-out forwards ;
+}
+}
+
+
+
+.unrollMe_maxWidth{
+    max-width: 80%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.aboutKasa{
+    margin: 20px 100px;
+}
+
+@keyframes showInfo {
+    0% {
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes hideInfo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}

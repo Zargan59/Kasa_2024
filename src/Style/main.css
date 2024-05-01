@@ -62,25 +62,10 @@
   list-style-type: none;
 }
 
-body {
-  margin: 0;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: black;
-  color: white;
-  gap: 20px;
-  padding: 40px 0;
-}
-
 .cards {
   margin: 50px 100px;
   padding: 50px 0;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -101,12 +86,12 @@ body {
   height: 340px;
   display: flex;
   flex-direction: column;
-  object-fit: cover;
 }
 .cards .card .card_img {
   width: 100%;
   min-height: 340px;
   border-radius: 10px;
+  object-fit: cover;
 }
 .cards .card .card_text {
   color: white;
@@ -119,9 +104,135 @@ body {
   bottom: 5%;
 }
 
+.error {
+  margin-bottom: 100px;
+}
+.error .errorContent {
+  color: #FF6060;
+  text-align: center;
+}
+.error .error_404 {
+  font-weight: 700;
+  font-size: 288px;
+  margin: 0;
+  margin-bottom: 100px;
+}
+.error .error_message {
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 100px;
+}
+.error .return {
+  color: inherit;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.about {
+  margin: 100px 0;
+}
+
+.unrollMe {
+  max-width: 580px;
+}
+.unrollMe .unrolled {
+  padding: 0 15px;
+  margin-top: -10px;
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(0px);
+  transition: opacity 0.3s ease-in-out, height 0.3s 0.3s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  min-height: 20px;
+  z-index: 2;
+  display: flex;
+  background-color: #F7F7F7;
+  background-color: pink;
+  border-radius: 0 0 5px 5px;
+  width: 100%;
+}
+.unrollMe .hidden {
+  border: 2px solid green;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transform: translateY(-100px);
+}
+
+.unrollMe_content {
+  height: 50px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #FF6060;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 99;
+}
+.unrollMe_content p {
+  color: white;
+  margin: auto 0 auto 25px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.unrollMe_content img {
+  max-width: 32px;
+  max-height: 32px;
+  margin-left: auto;
+  margin-right: 25px;
+  transform: rotate(180deg);
+}
+.unrollMe_content .active {
+  transform: rotate(0deg);
+}
+
+.unrollMe_maxWidth {
+  max-width: 80%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.aboutKasa {
+  margin: 20px 100px;
+}
+
+@keyframes showInfo {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes hideInfo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  gap: 20px;
+  padding: 40px 0;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

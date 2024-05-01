@@ -1,7 +1,7 @@
 .cards{
     margin: 50px 100px;
     padding: 50px 0;
-    background-color: #f6f6f6;
+    background-color: $cards_background-color;
     border-radius: 25px;
 
     display: flex;
@@ -24,12 +24,13 @@
         height: 340px;
         display: flex;
         flex-direction: column;
-        object-fit: cover;
-      
+        
             & .card_img{
                 width: 100%;
                 min-height: 340px;
                 border-radius: 10px;
+                object-fit: cover;
+
             }
             & .card_text{
                 color: white;

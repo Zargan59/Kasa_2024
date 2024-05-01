@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 function Navbar() {
     return (
       <nav className='navbar'> 
-        <img src={logo} alt='Kasa' />
+        <NavLink to = "/"><img src={logo} alt='Kasa' /> </NavLink>
           <ul className='menu'>
             <NavLink to = "/" className={({isActive})=> isActive? "selected":""}><li>Accueil</li></NavLink>
             <NavLink to = "/About" className={({isActive})=> isActive? "selected":""}><li>A Propos </li></NavLink>
