@@ -1,4 +1,5 @@
 $main-color : #FF6060;
+$background-color :#F7F7F7 ;
 
 .about{
     margin: 100px 0 ;
@@ -9,7 +10,7 @@ $main-color : #FF6060;
     max-width: 580px;
 
     & .unrolled{
-        padding: 0 15px ;
+        padding: 15px 25px ;
         margin-top: -10px;
         font-size: 18px;
         opacity: 0;
@@ -26,14 +27,21 @@ $main-color : #FF6060;
         
         z-index: 2;
         display: flex;
+        font-weight: 400;
     
-        background-color:  #F7F7F7;
-        background-color:  pink; 
+        background-color:  $background-color;
         border-radius: 0 0 5px 5px;
         width: 100%;
+
+        & .collapse_ul{
+            list-style: none;
+            padding-left: 0;
+            & .collapse_li{
+                margin-bottom: 5px;
+            }
+        }
     }
     & .hidden{
-        border: 2px solid green;
         visibility: hidden;
         opacity: 0;
         height: 0;
@@ -67,12 +75,11 @@ $main-color : #FF6060;
         margin-left: auto;
         margin-right: 25px;
         transform: rotate(180deg);
-
+        transition: transform 0.2s ease-in-out;
         
     }
     & .active{
         transform: rotate(0deg);
-        // animation: hideInfo 0.1s ease-in-out forwards ;
 }
 }
 
@@ -83,25 +90,10 @@ $main-color : #FF6060;
     margin: auto;
     border-radius: 5px;
 }
+.unrollMe_minWidth{
+    width: 850px;
+}
 
 .aboutKasa{
     margin: 20px 100px;
-}
-
-@keyframes showInfo {
-    0% {
-        transform: rotate(180deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes hideInfo {
-    0% {
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(180deg);
-    }
 }

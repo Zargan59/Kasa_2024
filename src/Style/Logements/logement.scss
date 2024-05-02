@@ -1,0 +1,84 @@
+.logementInfos{
+    margin: 0 100px 1%;
+    display: flex;
+    flex-direction: column;
+
+    
+    & .logementContent{
+        display: flex;
+
+        & .logementInfosDescription{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            
+            .logementTitleLocation{
+                display: flex;
+                flex-direction: column;
+            
+                & .logementTitle{
+                    color: $main-color;
+                    font-weight: 500;
+                    font-size: 36px;
+                    margin: 0;
+                }
+                & .logementLocation{
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+    
+            .logementTag{
+                display: flex;
+                list-style: none;
+                padding: 0;
+                & .tag{
+                    background-color: $main-color;
+                    margin-right: 10px;
+                    color: white;
+                    padding: 5px 40px ;
+                    border-radius: 12px ;
+    
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+        }
+        
+        & .hostInfo{
+            width:50% ;
+            & .hostPresentation{
+                display: flex;
+                align-items: center;
+                & .hostName{
+                    display: flex;
+                    color: $main-color;
+                    font-size: 18px;
+                    font-weight: 500;
+                    width: 90px;
+                    margin-left: auto;
+               }
+               & .hostPicture{
+                border-radius: 50%;
+               }
+            }
+            & .rate{
+                margin-left: auto;
+                width: 500px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 10px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    & .Unroll_LogementInfos{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+}
+
+

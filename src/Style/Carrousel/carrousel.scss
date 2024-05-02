@@ -1,0 +1,40 @@
+.carrouselContent{
+    height: 650px;
+    margin: 0 100px 50px;
+    position: relative;
+}
+
+.hidde_img{
+    display: none;
+}
+
+.carrouselCurrentImg{
+    border-radius: 25px;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.arrowContent{
+    position: absolute;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    padding: 0 25px;
+    justify-content: space-between;
+
+    & img{
+        cursor: pointer;
+    }
+    & .leftArrow{
+        height: 80px;
+        width: 50px;
+        transform: rotate(180deg);
+    }
+    & .rightArrow{
+        height: 80px;
+        width: 50px;
+
+    }
+}
