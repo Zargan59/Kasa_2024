@@ -9,3 +9,11 @@
     gap: 20px;
     padding: 40px 0;
 }
+
+@media only screen and (max-width: 640px){
+    .footer p{
+        width: 140px;
+        text-align: start;
+        margin: 0;
+    }
+}

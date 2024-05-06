@@ -82,3 +82,67 @@
 }
 
 
+@media only screen and (max-width: 640px ) {
+    .logementInfos{
+        margin: 20px;
+        & .logementContent{
+            flex-direction: column;
+
+            & .hostInfo{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                width: 100%;
+
+                & .rate{
+                    gap: 0;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0;
+                    & img{
+                        width: 24px;
+                    }
+                }
+            }
+
+            & .hostPresentation{
+                & .hostName{
+                    text-align: end;
+                    margin-right: 10px;
+                }
+                & .hostPicture{
+                    height: 64px;
+                }
+            }
+            
+            & .logementInfosDescription{
+                width: 100%;
+                & .logementTitleLocation{
+                    width: 100%;
+                    & .logementTitle{
+                        font-size: 18px;
+                    }
+                    & .logementLocation{
+                        font-size: 14px;
+                        margin-bottom: 0;
+
+                    }
+                }
+                & .logementTag{
+                    & .tag{
+                        font-size: 10px ;
+                        padding:0 10px;
+                        min-height: 25px ;
+                        min-width: 85px ;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        & .Unroll_LogementInfos{
+            flex-direction: column;
+        }
+        }
+    }

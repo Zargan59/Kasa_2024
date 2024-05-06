@@ -74,12 +74,12 @@ $background-color :#F7F7F7 ;
         max-height: 32px;
         margin-left: auto;
         margin-right: 25px;
-        transform: rotate(180deg);
+        transform: rotate(0deg);
         transition: transform 0.2s ease-in-out;
         
     }
     & .active{
-        transform: rotate(0deg);
+        transform: rotate(180deg);
 }
 }
 
@@ -96,4 +96,21 @@ $background-color :#F7F7F7 ;
 
 .aboutKasa{
     margin: 20px 100px;
+}
+
+
+@media only screen and (max-width:640px){
+    .about{
+        margin: 20px 0;
+        margin-bottom: 160px;
+    }
+    .aboutKasa{
+        margin: 0 20px;
+    }
+    .unrollMe_maxWidth{
+        max-width: 100%;
+    }
+    .unrollMe_minWidth{
+      width: 100%;  
+    }
 }

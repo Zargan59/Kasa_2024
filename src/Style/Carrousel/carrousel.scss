@@ -26,15 +26,26 @@
 
     & img{
         cursor: pointer;
+        height: 80px;
+        width: 50px;
     }
     & .leftArrow{
-        height: 80px;
-        width: 50px;
         transform: rotate(180deg);
     }
-    & .rightArrow{
-        height: 80px;
-        width: 50px;
+}
 
+@media only screen and (max-width : 640px){
+    .carrouselContent{
+        height: 255px;
+        margin: 0 20px;
+    }
+    .arrowContent{
+         & img{
+            height: 40px;
+            width: 24px;
+         }
+    }
+    .carrouselCurrentImg{
+        border-radius: 10px;
     }
 }

@@ -18,7 +18,7 @@
 
 .bannerHome{
     margin-top: 20px;
-    background: url(../Assets/BannerHome.jpg), center center/cover #00000060;
+    background: url(../Assets/BannerHome.jpg), center center/cover #0000009e;
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,5 +37,28 @@
     background-position-x: center;
     background-position-y: center;
     
+
+}
+
+
+@media only screen and (max-width: 640px){
+    .banner {
+        min-width: 335px;
+        max-height: 120px;
+        margin: 20px;
+        border-radius: 10px;
+        justify-content: flex-start;
+        
+        & h1{
+            font-size: 24px;
+            font-weight: 700;
+            width: 225px;
+            margin: 0 20px;
+        }
+    }
+
+    .bannerAlernativ{
+        height: 120px;
+    }
 
 }
