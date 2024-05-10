@@ -4,7 +4,7 @@ export default function hostInfos(props){
             <div className="hostName">
                 <p>{props.name.name} </p>
             </div>
-                <img className="hostPicture" src={props.name.picture} alt="" />
+                <img className="hostPicture" src={props.name.picture} alt="Photo de l'hôte" />
         </div>
     )
 }

@@ -7,6 +7,7 @@ import HostInfos from "../Components/logement/host_infos"
 import HostRating from "../Components/logement/host_rating"
 import Footer from "../Components/Footer/footer"
 import Unroll from "../Components/Unroll/unroll"
+import Error from "./Error"
 
 import "../Style/main.css"
 
@@ -16,7 +17,9 @@ import logements from "../JSON/logement.json"
 function Logement(){
     const {id} = useParams()
     const data = logements.find((item)=>item.id === id)
-    console.log(data);
+    if(!data){
+        return ( <Error />)
+    }
     return(
         <div>
             <Navbar />

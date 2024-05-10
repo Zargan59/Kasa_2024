@@ -6,7 +6,6 @@ export default function tag(props){
                     <li className="tag" key={index}> {tag} </li>
                 )
             })
-            
             }
         </ul>
     )

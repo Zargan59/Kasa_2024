@@ -3,7 +3,6 @@ import { useState } from "react";
 import arrow from "../../Assets/navArrow.png"
 
 export default function Carrousel(props){
-    console.log(props.images);
     const [currentSlide, setCurrentSlide] = useState(0)
     const imageArray = props.images.flatMap(e=> e.images).length
 

@@ -163,6 +163,7 @@
 .error .errorContent {
   color: #FF6060;
   text-align: center;
+  min-height: 60vh;
 }
 .error .error_404 {
   font-weight: 700;
